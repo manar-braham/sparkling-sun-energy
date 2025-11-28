@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Empêche le scroll */
+  font-family: 'Arial', sans-serif;
+}
+/* Conteneur principal */
+.form-page-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end; /* Aligne le formulaire à droite */
+  align-items: center;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  background: url('C:/Manarwork/sparkling-sun-energy/public/images/panneaux-solaires.jpg') no-repeat center center/cover;
+}
+
+/* Formulaire */
+.form-content {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 500px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  margin-right: 50px; /* Espace entre le formulaire et le bord droit */
+}
+
+h2 {
+  text-align: left;
+  color: #333;
+}
+
+p {
+  text-align: left;
+  padding: 5px;
+  margin-bottom: 8px;
+  color: #666;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+   box-sizing: border-box;
+   height:30px;
+}
+
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ffc107;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ff9800;
+}
+
+.terms {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+/* Container flex pour aligner la checkbox avec le texte */
+.form-group.terms {
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  transform: scale(0.7); /* Taille réduite de la checkbox */
+  margin: -4px; /* Espace entre la checkbox et le texte */
+  cursor: pointer;
+}
+
+.form-group.terms label {
+  display: inline; /* Assure l'alignement du texte avec la checkbox */
+  font-size: 0.9rem;
+}
+
+.terms a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}
